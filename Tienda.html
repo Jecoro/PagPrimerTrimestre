@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="tienda.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script type="text/javascript" src="tienda.js"></script>
+</head>
+<body class="grid-container">
+  <header class="header">
+    <div>
+      <div class="logo"> <a href="Index.html"><img src="IMG/Logo_Nombre_Oscuro.png" alt="logotipo" width="400%"></a> </div>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="Index.html">INICIO</a></li>
+        <li><a href="Galeria.html">Galeria</a></li>
+        <li><a href="Guías.html">Guías</a></li>
+        <li><a href="Impresoras.html">Impresoras</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="navbar"></nav>
+
+  <aside class="sidebar">
+
+    <div id="info-table">
+      <h1>Cesta</h1>
+      <table id="mytable"  width="100px" align="center">
+        <tr>
+          <th>Productos</th>
+          <th>Cantidad</th>
+        </tr>
+        <tr>
+          <td class="imgbackground"><img src="IMG/PLA1.jpg" height="100" width="100"/></td>
+          <td>0.00</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button onclick="reduce(this)">-</button>
+            <input type="text" size="1" readonly="true" value="1" class="numeroCantidad"/>
+            <button onclick="plus(this)">+</button>
+          </td>
+          
+        </tr>
+        
+      </table>
+    </div>
+
+      <p class="">Total: 0</p>
+      <div class="compra">
+        <button class="btbuy" onclick="buyNow()">Compra ahora</button>
+      </div>
+    </div>
+
+  </aside>
+
+
+  <article class="main">
+
+    <div>
+			<div id="shop">
+      <div class="listado">
+
+        <div class="details">
+          <details open>
+            <summary>Filamento</summary>
+            <ul>
+              <li>
+                <a href="#" onclick="addToCart(this);">
+                  <img src="IMG/PLA1.jpg" height="100" width="100"/><br />
+                  <span  class="tituloProducto">PLA 1kg</span><br />
+                  <span class="price">23.00</span>€<br />
+                  Añadir al carrito
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="addToCart(this);">
+                  <img src="IMG/PLA2.jpg" height="100" width="100"/><br />
+                  <span  class="tituloProducto">PLA 1kg</span><br />
+                  <span class="price">23.00</span>€<br />
+                  Añadir al carrito
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="addToCart(this);">
+                  <img src="IMG/PLA3.jpg" height="100" width="100"/><br />
+                  <span  class="tituloProducto">PLA 1kg</span><br />
+                  <span class="price">23.00</span>€<br />
+                  Añadir al carrito
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="addToCart(this);">
+                  <img src="IMG/PLA4.jpg" height="100" width="100"/><br />
+                  <span  class="tituloProducto">PLA 1kg</span><br />
+                  <span class="price">23.00</span>€<br />
+                  Añadir al carrito
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="addToCart(this);">
+                  <img src="IMG/PLA5.jpg" height="100" width="100"/><br />
+                  <span  class="tituloProducto">PLA 1kg</span><br />
+                  <span class="price">23.00</span>€<br />
+                  Añadir al carrito
+                </a>
+              </li>
+                        <li>
+                <a href="#" onclick="addToCart(this);">
+                  <img src="IMG/PLA6.jpg" height="100" width="100"/><br />
+                  <span  class="tituloProducto">PLA 1kg</span><br />
+                  <span class="price">30.00</span>€<br />
+                  Añadir al carrito
+                </a>
+              </li>
+                        <li>
+                <a href="#" onclick="addToCart(this);">
+                  <img src="IMG/PLA7.jpg" height="100" width="100"/><br />
+                  <span  class="tituloProducto">PLA 1kg</span><br />
+                  <span class="price">23.00</span>€<br />
+                  Añadir al carrito
+                </a>
+              </li>
+                        <li>
+                <a href="#" onclick="addToCart(this);">
+                  <img src="IMG/PLA8.jpg" height="100" width="100"/><br />
+                  <span  class="tituloProducto">PLA 1kg</span><br />
+                  <span class="price">30.00</span>€<br />
+                  Añadir al carrito
+                </a>
+              </li>
+              
+            </ul>
+          </details>
+        </div>
+       <div class="details">
+        <details>
+          <summary>Impresoras</summary>
+          <ul>
+            <li>
+              <a href="#" onclick="addToCart(this);">
+                <img src="IMG/Impresora1.jpg" height="100" width="100"/><br />
+                <span  class="tituloProducto">Ender 3</span><br />
+                <span class="price">175.99</span>€<br />
+                Añadir al carrito
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="addToCart(this);">
+                <img src="IMG/Impresora2.jpg" height="100" width="100"/><br />
+                <span  class="tituloProducto">WZTO  Mini</span><br />
+                <span class="price">79.45</span>€<br />
+                Añadir al carrito
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="addToCart(this);">
+                <img src="IMG/Impresora3.jpg" height="100" width="100"/><br />
+                <span  class="tituloProducto">Ender 5 plus</span><br />
+                <span class="price">569.00</span>€<br />
+                Añadir al carrito
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="addToCart(this);">
+                <img src="IMG/Impresora4.jpg" height="100" width="100"/><br />
+                <span  class="tituloProducto">Creality Cr10</span><br />
+                <span class="price">229.99</span>€<br />
+                Añadir al carrito
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="addToCart(this);">
+                <img src="IMG/Impresora5.jpg" height="100" width="100"/><br />
+                <span  class="tituloProducto">Elegoo Saturn</span><br />
+                <span class="price">425.00</span>€<br />
+                Añadir al carrito
+              </a>
+            </li>
+                      <li>
+              <a href="#" onclick="addToCart(this);">
+                <img src="IMG/Impresora6.jpg" height="100" width="100"/><br />
+                <span  class="tituloProducto">Elegoo Mars 2</span><br />
+                <span class="price">120.00</span>€<br />
+                Añadir al carrito
+              </a>
+            </li>
+                      <li>
+              <a href="#" onclick="addToCart(this);">
+                <img src="IMG/Impresora7.jpg" height="100" width="100"/><br />
+                <span  class="tituloProducto">Wash & Cure</span><br />
+                <span class="price">150.00</span>€<br />
+                Añadir al carrito
+              </a>
+            </li>
+                      <li>
+              <a href="#" onclick="addToCart(this);">
+                <img src="IMG/Impresora8.jpg" height="100" width="100"/><br />
+                <span  class="tituloProducto">Infinite z belt</span><br />
+                <span class="price">1099.99</span>€<br />
+                Añadir al carrito
+              </a>
+            </li>
+            
+          </ul>
+        </details>
+       </div>
+
+      </div>	
+			</div>
+		</div>
+  </article>
+  <footer class="footer">
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="Index.html">Inicio</a></li>
+        <li class="list-inline-item"><a href="galeria.html">Galeria</a></li>
+        <li class="list-inline-item"><a href="guias.html">Guías</a></li>
+        <li class="list-inline-item"><a href="impresoras.html">Impresoras</a></li>
+        <li class="list-inline-item"><a href="Tienda.html">Tienda</a></li>
+    </ul>
+    <p class="copyright">Utily 3D Prints © 2021</p>
+  </footer>
+</body>
+</html>
