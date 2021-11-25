@@ -1,42 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: 100px 100px 100px;
-  grid-gap: 5px;
-  justify-items: center;
-  align-items: center;
-}
-
-.grid-item1 {
-  background: grey;
-  text-align: center;
-  border: black 5px solid;
-  width: 100px;
-  height: 100px;
-}
-
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="grid.css">
+  <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body class="grid-container">
+  <header class="header">
+    <div>
+      <div class="logo"> <a href="Index.html"><img src="Logo_Nombre_Oscuro.png" alt="logotipo" width="400%"></a> </div>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="Galeria.html">Galeria</a></li>
+        <li><a href="Guías.html">Guías</a></li>
+        <li><a href="Impresoras.html">Impresoras</a></li>
+        <li><a href="Tienda.html">Tienda</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="navbar"></nav>
+  <aside class="sidebar"></aside>
+  <article class="main">
+    <h1>¡Bienvenido a Utily 3D Prints!</h1>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus veritatis quis quo saepe nemo itaque deserunt
+      dolores perspiciatis inventore quia, rerum ullam, ea quidem consequuntur cum ipsa facilis asperiores reprehenderit.
+    </p>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img1.jpg" style="width:90%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img2.jpg" style="width:90%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img3.jpg" style="width:90%">
+      </div>
+      
+    
 
-<div class="grid-container">
-  <div class="grid-item1">1</div>
-  <div class="grid-item1">2</div>
-  <div class="grid-item1">3</div>
-  <div class="grid-item1">4</div>
-  <div class="grid-item1">5</div>
-  <div class="grid-item1">6</div>
-  <div class="grid-item1">7</div>
-  <div class="grid-item1">8</div>
-  <div class="grid-item1">9</div>
-  <div class="grid-item1">10</div>
-
-</div>
-
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <div class="homepagecontent">   
+      <p class="contenidoInicialTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae iusto reprehenderit amet excepturi obcaecati
+      tempora dolore cum nemo quidem nihil voluptate totam exercitationem commodi ab perspiciatis, deleniti laborum! Nisi,
+      vel quod architecto et quaerat impedit possimus consequatur hic id nesciunt, dolorum quia quas, aperiam nemo quibusdam
+      blanditiis dolor repellendus? Rem error ab reprehenderit architecto deserunt ducimus blanditiis ratione optio velit
+      aperiam odit adipisci vero fuga, hic earum tempora, nesciunt autem ex, quisquam facere laboriosam beatae omnis! Odit
+      eligendi nihil explicabo, asperiores dolorem enim blanditiis vel ab fuga odio modi dolorum sit nesciunt deleniti
+      consectetur, quaerat harum iure pariatur. Quasi iusto molestias repellendus magnam, optio nam quam aliquam et atque
+      possimus veritatis, labore vel quas, similique harum dicta nemo quo numquam. Recusandae voluptas atque commodi, libero
+      sapiente placeat iusto, neque suscipit iste, obcaecati nobis. Ut dignissimos provident saepe blanditiis aliquam error
+      obcaecati porro non voluptates consequuntur ipsa vel, officiis excepturi?</p>
+      <img src="img4.jpg" alt="" style="width:30%" class="contenidoInicial">
+    </div>
+    <p class="espacio">&nbsp;</p>
+  </article>
+  <footer class="footer"></footer>
 </body>
 </html>
