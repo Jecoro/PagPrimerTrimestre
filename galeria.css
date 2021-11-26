@@ -1,0 +1,36 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+
+.zoom:hover {-webkit-transform:scale(1.05);transform:scale(1.05);}
+.zoom {overflow:hidden;}
+
+.foto{
+    border: 3px solid #315f54;
+    padding: 3px;
+    
+    margin-right: 20px;
+}
+.infoImpresion{
+    display: inline-flex;
+    
+}
+table,td,th{
+    padding: 2px;
+    margin: 0;
+    border: 1px solid black;
+    
+}
+.letrasTituloFoto{
+    color: #315f54;
+    font-size: 30px;
+    
+}
+th{background-color: #315f54;}
+td{ 
+    background-color: #3dd27f;
+    width: 90%;
+}

@@ -14,8 +14,8 @@ a{text-decoration: none;color: deepskyblue;}
 
 .btorinter-div{height: auto;overflow: auto;}
 .viewIntegral{float: right;}
-.btbuy{background-color: #315f54;color: white;border: 0px;float: right; border-radius: 2%; font-size: larger;padding:2px;}
-.btbuy:hover{background: -webkit-gradient(linear, 0 0, 0 100%, from(#3dd27f), to(#315f54));}
+.btbuy{background: -webkit-gradient(linear, 0 0, 0 100%, from(#3dd27f), to(#315f54));  color: white;border: 0px;float: right; border-radius: 2%; font-size: larger;padding:2px;}
+.btbuy:hover{background: #315f54;}
 #shop{
     width: 800px;margin: 0px auto;
     height: auto;
