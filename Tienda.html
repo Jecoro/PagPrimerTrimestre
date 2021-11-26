@@ -35,25 +35,13 @@
       <table id="mytable"  width="100px" align="center">
         <tr>
           <th>Productos</th>
-          <th>Cantidad</th>
+          <th>Precio</th>
         </tr>
-        <tr>
-          <td class="imgbackground"><img src="IMG/PLA1.jpg" height="100" width="100"/></td>
-          <td>0.00</td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <button onclick="reduce(this)">-</button>
-            <input type="text" size="1" readonly="true" value="1" class="numeroCantidad"/>
-            <button onclick="plus(this)">+</button>
-          </td>
-          
-        </tr>
-        
+
       </table>
     </div>
 
-      <p class="">Total: 0</p>
+      <span>Total:<p id="precioTotal" >0</p></span>
       <div class="compra">
         <button class="btbuy" onclick="buyNow()">Compra ahora</button>
       </div>
@@ -76,7 +64,7 @@
                 <a href="#" onclick="addToCart(this);">
                   <img src="IMG/PLA1.jpg" height="100" width="100"/><br />
                   <span  class="tituloProducto">PLA 1kg</span><br />
-                  <span class="price">23.00</span>€<br />
+                  <span class="price" >23</span>€<br />
                   Añadir al carrito
                 </a>
               </li>
@@ -219,10 +207,11 @@
   </article>
   <footer class="footer">
     <div class="social">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/utily3dprints/"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/jesús-cortázar/"><i class="fab fa-linkedin-in"></i></a>
+
     </div>
     <ul class="list-inline">
         <li class="list-inline-item"><a href="Index.html">Inicio</a></li>

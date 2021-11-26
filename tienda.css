@@ -47,8 +47,10 @@ a{text-decoration: none;color: deepskyblue;}
 }
 .compra{
     margin-right: 1em;
-    margin-top: 30em;
 }
 .numeroCantidad{
     text-align: center;
+}
+.main{
+    min-height: 50em;
 }
