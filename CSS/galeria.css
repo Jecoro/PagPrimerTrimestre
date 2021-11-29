@@ -6,7 +6,9 @@
 
 
 .zoom:hover {-webkit-transform:scale(1.05);transform:scale(1.05);}
-.zoom {overflow:hidden;}
+.zoom {overflow:hidden;
+    box-shadow: 0px 3px 4px rgb(70, 57, 57);
+}
 
 .foto{
     border: 3px solid #315f54;
@@ -27,7 +29,7 @@ table,td,th{
 .letrasTituloFoto{
     color: #315f54;
     font-size: 30px;
-    
+    text-shadow: 1px 1px 3px #666666;
 }
 th{background-color: #315f54;}
 td{ 
