@@ -108,7 +108,7 @@ window.onload = function () {
 	const DOMtotal = document.querySelector('#total');
 	const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 	const miLocalStorage = window.localStorage;
-
+	const comprarAhora= document.querySelector('#boton-comprar');
 	// Funciones
 
 	/**
@@ -265,8 +265,18 @@ window.onload = function () {
 		}
 	}
 
+	function confimacionCompra(){
+		var confirmacion = confirm('¿Está seguro que desea realizar la compra?');
+		if (confirmacion){
+			alert('Compra realizada con exito');
+			vaciarCarrito();
+		}
+	}
+
+
 	// Eventos
 	DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+	comprarAhora.addEventListener('click' ,confimacionCompra);
 
 	// Inicio
 	cargarCarritoDeLocalStorage();

@@ -3,12 +3,17 @@
     margin: 20px;
 }
 
+
 .img-fluid{
     width: 150px;
     height: 150px;
 }
 .item{
 background: -webkit-gradient(linear, 0 0, 0 100%, from(#3dd27f), to(#315f54));  color: white;border: 0px;float: right; border-radius: 2%; font-size: larger;padding:2px;}
+
+.item:hover,.vaciar:hover{
+    background: #315f54; 
+}
 
 .btbuy{
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#3dd27f), to(#315f54));
@@ -24,4 +29,15 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(#3dd27f), to(#315f54));  
 
 .carrito>ul{
     list-style: none;
+}
+
+.vaciar{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#3dd27f), to(#315f54));
+    color: white;
+    border: 0px;float: right;
+    border-radius: 2%;
+    font-size: larger;
+    padding:2px;
+    margin-top: 10px;
+    margin-right: 55px;
 }
