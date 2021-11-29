@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid</title>
   <link rel="stylesheet" href="CSS/grid.css">
+  <link rel="stylesheet" href="CSS/Calculadora.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body class="grid-container">
@@ -26,7 +27,84 @@
   <nav class="navbar"></nav>
   <aside class="sidebar"></aside>
   <article class="main">
-    
+    <p class="descripcion">En esta sección podrá calcular el coste aproximado de su proxima impresion 3d, para ello necesitamos que nos facilites los siguientes datos: </p>
+    <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Calculadora de costes</h1>
+        <h3>Introduce los datos de la forma más exacta posible</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="Tipo_de_Impresora" class="Tipo_de_Impresora">Tipo de Impresora
+                    <span class="obligatorio">*</span>
+                  </label>
+                  <select id="impresora" name="impresora"required="obligatorio">
+                    <option value="Ender Series" selected>Ender Series</option>
+                    <option value="Anycubic 5">Anycubic 5</option>
+                    <option value="Pursa">Pursa</option>
+                  </select>
+         
+                </p>
+
+                <p>
+                  <label for="material" class="material">Material
+                    <span class="obligatorio">*</span>
+                  </label>
+                  <select id="Material" name="Material"required="obligatorio">
+                    <option value="pla" selected>PLA</option>
+                    <option value="abs">Abs</option>
+                    <option value="resina">Resina</option>
+                  </select>
+                </p>
+              
+                <p >
+                  <input type="radio" id="20" class="relleno" name="rellenoOp1" value="20">
+                  <label for="html">20%</label>
+                  <input type="radio" id="css" class="relleno" name="rellenoOp2" value="40">
+                  <label for="css">40%</label>
+                  <input type="radio" id="60" class="relleno" name="rellenoOp3" value="60">
+                  <label for="javascript">60%</label>
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
   </article>
   <footer class="footer">
     <div class="social">
