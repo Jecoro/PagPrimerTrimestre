@@ -22,9 +22,7 @@ body{
     font-size: large;
     color: #315f54;
 }
-.relleno{
-    display: inline-block;
-}
+
 input,select{
   background-color: #fbfbfb; 
   width: 408px; 
@@ -75,7 +73,9 @@ button{
   cursor: pointer;
 }
 
-
+.radio{
+  display: none;
+}
 button p{
   color: #fff; 
 }
