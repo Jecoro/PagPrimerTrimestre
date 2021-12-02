@@ -82,8 +82,13 @@ document.addEventListener('DOMContentLoaded', function () {
            default:
                precioFinal = 0;
        }
-       precioFinal=precioFinal+(1.75*tiempo);
-      document.getElementById("valorFinal").innerHTML="Precio Final Estimado: "+precioFinal+" €";
+       if(tiempo<=0){
+        document.getElementById("errores").innerHTML="Introduce un tiempo mayor que 0";
+    }else{
+     precioFinal=precioFinal+(1.75*tiempo);
+     document.getElementById("errores").innerHTML="";
+     document.getElementById("valorFinal").innerHTML="Precio Final Estimado: "+precioFinal+" €";
+    }
         
     }
     console.log("fin");
